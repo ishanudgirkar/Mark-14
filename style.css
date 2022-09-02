@@ -1,9 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
 body{
     text-align: center;
+    background-color: #0c4a6e;
+    color: white;
+    font-family: 'Silkscreen', cursive;
+}
+
+h1{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 label{
 
     display: block;
     padding-bottom: 1rem;
+    font-size: larger;
+    font-weight: bold;
+    margin: auto;
+    padding: 1rem;
+     
+}
+
+input{
+    display: block;
+    margin: auto;
+    font-size: 14px;
+    outline: #fff;
+    padding: 0.6rem 1rem;
+    border: 2px solid #0c4a6e;
+    border-radius: 0.5rem;
+    width: 20%;
+    margin-top: 1rem;
+}
+
+button{
+    background-color: #0c4a6e;
+   border-radius: 0.5rem;
+   color: white;
+   box-sizing: border-box;
+   text-decoration: none;
+   padding: 0.5rem 1rem;
+   cursor: pointer;
+   outline: none;
+   display: block;
+   margin: auto;
+   margin-top: 1rem;
+   width: 10%;
+   font-size: large;
+   border-color: white;
+ 
+ }
+ 
+ #output-box{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: larger;
+ }
+
+ footer{
+    margin-top: 2rem;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+  }
+
+
+footer p {
+  font-size: large;
+  text-align: center;
+  padding-top: 2rem;
+  word-spacing: 0.4rem;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  
+}
+
+/* code */
+.social-links {
+  text-align: center;
+}
+.social-links > .link {
+  padding: 0 0.5rem;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+/* code */
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+  margin: auto;
+}
+
+img {
+  width: 30px;
+}
+
+a,
+img,
+li {
+  display: inline;
 }
