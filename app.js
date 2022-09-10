@@ -30,7 +30,7 @@ function calculateProfitAndLoss(initial , quantity , current) {
     
         // showOutput(`Hey the loss is ${loss} and the percent is ${lossPercentage}% `);
         // showOutput(`Hey the loss is ${loss} and the percent is ${newLossPercentage}% `);
-        outputBox.innerText = `Hey the loss is ${loss} and the percent is ${newLossPercentage}% `;
+        outputBox.innerText = `Hey the loss is ${loss} and the percent is ${newLossPercentage}% ! `;
         outputBox.style.color = "red";
     
       } else if (current > initial) {
@@ -42,7 +42,7 @@ function calculateProfitAndLoss(initial , quantity , current) {
     
         // showOutput(`Hey the profit is ${profit} and the percent is ${profitPercentage}% `);
         // showOutput(`Hey the profit is ${profit} and the percent is ${newProfitPercentage}% `);
-        outputBox.innerText = `Hey the profit is ${profit} and the percent is ${newProfitPercentage}% `;
+        outputBox.innerText = `Hey the profit is ${profit} and the percent is ${newProfitPercentage}% ! `;
         outputBox.style.color = "green";
     
       } else {
