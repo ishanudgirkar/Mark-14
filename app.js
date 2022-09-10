@@ -49,7 +49,7 @@ function calculateProfitAndLoss(initial , quantity , current) {
         //the rest logic here
         // showOutput(`no pain no gain and no gain no pain`);
         outputBox.innerText = `no pain no gain and no gain no pain !`;
-        outputBox.style.color = "black";
+        outputBox.style.color = "white";
     
       }
     
