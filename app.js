@@ -22,7 +22,10 @@ function submitHandler(){
 
 
 function calculateProfitAndLoss(initial , quantity , current) {
-    if (initial > current) {
+      if(initial < 0 || quantity < 0 || current < 0 ){
+        outputBox.innerText = `Please enter positive values only !`
+      }
+      else if (initial > current) {
         var loss = (initial - current) * quantity;
         var lossPercentage = (loss / (initial * quantity)) * 100;
         var newLossPercentage = Number(lossPercentage.toFixed(2));
