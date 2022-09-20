@@ -6,12 +6,16 @@ var outputBox = document.querySelector('#output-box');
 
 function submitHandler(){
     if (initialPrice.value && stocksQuantity.value && currentPrice.value) {
+      if(Number(initialPrice.value) === 0 || Number(stocksQuantity.value) === 0 || Number(currentPrice.value) === 0){
+        clearPreviousMessage();
+        outputBox.innerText = "Input here cannot be zero ; Please enter valid input ! 😐"
+      }else{
         var ip = Number(initialPrice.value);
         var qty = Number(stocksQuantity.value);
         var curr = Number(currentPrice.value);
     
         calculateProfitAndLoss(ip, qty, curr);
-      }
+      }}
       else {
         alert('Please fill out all Fields');
       } 
@@ -57,6 +61,11 @@ function calculateProfitAndLoss(initial , quantity , current) {
       }
     
 
+}
+
+function clearPreviousMessage(){
+  outputBox.innerText = "";
+  outputBox.style.color = "white";
 }
 
 // function showOutput(message){
